@@ -46,3 +46,27 @@ To get started, first install the required libraries inside a virtual environmen
 
 
 
+## CP notes:
+### Installing on OS X
+first install Miniconda:
+https://docs.conda.io/en/latest/miniconda.html
+
+Next setup a new environment:
+ `conda create -n generative python=3.6 ipykernel`
+
+Activate the environment:
+ `conda activate generative`
+
+Install required modules
+ `pip install -r requirements.txt`
+
+Install jupyter with the 'generative' virtualenv
+ `python -m ipykernel install --user --name generative`
+
+
+Install core pytorch utils
+ `pip install torch torchvision pytorch-lightning
+
+
+Start a jupyter notebook
+ `jupyter notebook`
